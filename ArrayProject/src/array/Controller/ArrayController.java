@@ -6,7 +6,9 @@ public class ArrayController
 	int[][] numberArray;
 	String[][] stringArray;
 	PotatoObject[][] potatoArray;
-	
+	/**
+	 * starts the methods for the arrays
+	 */
 	public void start()
 	{
 		fillNumberArray();
