@@ -92,7 +92,10 @@ public class HipsterPanel extends JPanel
 		
 		selectedHipsterComboBox = new JComboBox(baseArray);
 	}
-
+	/**
+ 	* populates the fields for the current hipster.
+ 	* @param currentHipster
+ 	*/
 	private void populateFields(Hipster currentHipster)
 	{
 		nameField.setText(currentHipster.getName());
@@ -103,7 +106,7 @@ public class HipsterPanel extends JPanel
 		{
 			booksArea.append(temp + ", ");
 		}
-		
+		// the image file path to get image for the hipster
 		imageURL = getClass().getResource("/hipster/view/images/" + currentHipster.getName() + ".jpg");
 		
 		if(imageURL != null)
